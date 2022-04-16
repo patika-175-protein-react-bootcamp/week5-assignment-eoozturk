@@ -1,4 +1,3 @@
-
 .container { 
   width: 50vw;
   height: 85%;
@@ -234,6 +233,23 @@ span {
   letter-spacing: 0.4px;
   height: 16px;
 }
+
+.checkbox{
+  width: 18px;
+  height:18px;
+  border: 2px solid #8e8e8e;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: absolute;
+}
+.checkboxLabel{
+    color: #8e8e8e;
+    width: 200px;
+    height: 10px;
+    letter-spacing: .1px;
+    margin-top: 2px;
+    margin-left: 30px;
+}
 .loginButton {
   display: flex;
   justify-content: center;
@@ -254,4 +270,11 @@ span {
 }
 .loginButton:disabled{
   opacity: 0.5;
+}
+
+.mode{
+  float: right;
+  height: 50px;
+  width: 50px;
+  border-style: none;
 }

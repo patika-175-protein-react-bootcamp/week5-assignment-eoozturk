@@ -17,12 +17,13 @@ const RegisterSchema = yup.object().shape({
       .max(12, 'Max. 12 karakter olabilir!')
       .required('Şifre alanı zorunludur!'),
     passwordConfirm: yup
-        .string()
-        .typeError('Sadece @/./+/-/_ kullanabilirsin')
-        .min(6, 'Min. 6 karakter olmalı!')
-        .max(12, 'Max. 12 karakter olabilir!')
-        .required('Şifre alanı zorunludur!')
-        .oneOf([yup.ref('password'), null], 'Şifreniz aynı değil!')
+      .string()
+      .typeError('Sadece @/./+/-/_ kullanabilirsin')
+      .min(6, 'Min. 6 karakter olmalı!')
+      .max(12, 'Max. 12 karakter olabilir!')
+      .required('Şifre alanı zorunludur!')
+      .oneOf([yup.ref('password'), null], 'Şifreniz aynı değil!'),
+   
   })
 
   export default RegisterSchema;
